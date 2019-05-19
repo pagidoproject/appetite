@@ -562,6 +562,7 @@ img {
   float: left;
   width: 100%;
   padding: 100px 0;
+  margin-top: -150px;
 }
 
 .mu-restaurant-menu-area {
@@ -687,206 +688,13 @@ img {
   font-size: 14px;
 }
 
-/*==================
-RESERVATION SECTION
-====================*/
 
-#mu-reservation {
-  background-color: #222;
-  display: inline;
-  float: left;
-  padding: 100px 0;
-  width: 100%;
-}
-
-.mu-reservation-area {
-  display: inline;
-  float: left;
-  width: 100%;
-}
-
-.mu-reservation-area .mu-title h2 {
-  color: #fff;
-}
-
-.mu-reservation-content {
-  display: inline;
-  float: left;
-  margin-top: 20px;
-  padding: 0 100px;
-  width: 100%;
-}
-
-.mu-reservation-content h3 {
-  color: #fff;
-  display: inline-block;
-  padding-bottom: 10px;
-  font-weight: bold;
-}
-
-.mu-reservation-content p {
-  color: #fff;
-  letter-spacing: 0.5px;
-  padding: 0 50px;
-  text-align: center;
-}
-
-.mu-reservation-left {
-  display: inline;
-  float: left;
-  margin-top: 30px;
-  width: 100%;
-}
-
-.mu-reservation-form .form-control {
-  margin-bottom: 20px;
-}
-
-.mu-reservation-form input[type="text"],
-.mu-reservation-form input[type="email"] {
-  border-radius: 0;
-  color: #000;
-  height: 40px;
-}
-
-.mu-reservation-form input[type="text"]:focus,
-.mu-reservation-form input[type="email"]:focus {
-  box-shadow: none;
-}
-
-.mu-reservation-form input[type="text"]::-webkit-input-placeholder,
-.mu-reservation-form input[type="email"]::-webkit-input-placeholder {
-  color: #555;
-}
-
-.mu-reservation-form input[type="text"]:-moz-placeholder,
-.mu-reservation-form input[type="email"]:-moz-placeholder {
-  color: #555;
-}
-
-.mu-reservation-form input[type="text"]::-moz-placeholder,
-.mu-reservation-form input[type="email"]::-moz-placeholder {
-  color: #555;
-}
-
-.mu-reservation-form input[type="text"]:-ms-input-placeholder,
-.mu-reservation-form input[type="email"]:-ms-input-placeholder {
-  color: #555;
-}
-
-.mu-reservation-form select {
-  border-radius: 0;
-  height: 40px;
-}
-
-.mu-reservation-form select:focus {
-  box-shadow: none;
-}
-
-.mu-reservation-form select option {
-  margin-bottom: 10px;
-  color: #000;
-}
-
-.mu-reservation-form textarea {
-  border-radius: 0;
-  color: #000;
-  padding: 10px;
-}
-
-.mu-reservation-form textarea:focus {
-  box-shadow: none;
-}
-
-.mu-reservation-form textarea::-webkit-input-placeholder {
-  color: #555;
-}
-
-.mu-reservation-form textarea:-moz-placeholder {
-  color: #555;
-}
-
-.mu-reservation-form textarea::-moz-placeholder {
-  color: #555;
-}
-
-.mu-reservation-form textarea:-ms-input-placeholder {
-  color: #555;
-}
-
-.mu-reservation-form button[type="submit"] {
-  border: none;
-  margin-top: 20px;
-  margin-left: 15px;
-}
-
-.datepicker {
-  border-radius: 0;
-  padding: 6px 10px;
-}
-
-.datepicker .datepicker-switch,
-.datepicker .prev,
-.datepicker .next,
-.datepicker tfoot tr th {
-  font-size: 20px;
-}
-
-.table-condensed > thead > tr > th,
-.table-condensed > tbody > tr > th,
-.table-condensed > tfoot > tr > th,
-.table-condensed > thead > tr > td,
-.table-condensed > tbody > tr > td,
-.table-condensed > tfoot > tr > td {
-  padding: 6px;
-}
-
-.datepicker table tr td.day:hover {
-  color: #fff;
-}
-
-.mu-reservation-right {
-  background-color: #fff;
-  display: inline;
-  float: left;
-  margin-top: 40px;
-  width: 100%;
-  padding: 10px;
-}
-
-.mu-opening-hour {
-  display: inline;
-  float: left;
-  width: 100%;
-  padding: 10px;
-}
-
-.mu-opening-hour h2 {
-  font-family: "Tangerine", cursive;
-  font-size: 50px;
-  margin: 10px 15px 20px;
-  padding-bottom: 15px;
-  text-align: center;
-}
-
-.mu-opening-hour ul li {
-  margin-bottom: 25px;
-  letter-spacing: 2px;
-}
-
-.mu-opening-hour ul p {
-  color: #000;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 600;
-}
 
 /*==================
  GALLERY SECTION
 ====================*/
 .gallery {
-  margin-top: -20px;
+  margin-top: -140px;
 }
 @media screen and (min-width: 991px) {
   .gallery {
@@ -1166,19 +974,22 @@ RESERVATION SECTION
  MAP SECTION
 ====================*/
 
-.mu-map {
-  overflow:hidden;
-    padding-bottom:50%;
-    position:relative;
-    height:0;
+#mu-map {
+  display: inline;
+  float: left;
+  height: 250px;
+  width: 50%;
 }
 
-.mu-map iframe {
-  left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+#mu-map iframe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  #mu-map {
+    width: 400px;
+    text-align: center;
+  }
 }
 
 /*==================
@@ -1268,7 +1079,7 @@ RESERVATION SECTION
   color: #0077e2;
 }
 
-#myFooter .google:hover {
+#myFooter .instagram:hover {
   color: #ef1a1a;
 }
 
@@ -1928,3 +1739,79 @@ body {
 }
 
 
+.gall{
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.heading {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: #1a1a1a;
+}
+
+.heading span {
+  display: block;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: -1rem -1rem;
+}
+
+.gallery-item {
+  /* Minimum width of 24rem and grow to fit available space */
+  flex: 1 0 24rem;
+  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.15);
+}
+.gal-title{
+  text-align: center;
+  margin-top: -167px;
+}
+.gall .heading{
+    font-size: 50px;
+  font-family: "Tangerine", cursive;
+  line-height: 30px;
+  color: #FFA500;
+}
+.gall-title h2{
+  color: #000;
+  font-size: 35px;
+ /* margin-bottom: 5px;*/
+  margin-top: -10px !important;
+}
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
+}
