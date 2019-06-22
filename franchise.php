@@ -1,12 +1,14 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>The Appetite Momos | Franchise Form</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Appetite Momos</title>
 
-  <!-- Favicon -->
+   <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
 
     <!-- Font awesome -->
@@ -36,15 +38,117 @@
     <!-- Open Sans for title -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     
+    
 
+
+    <style>
+      body {
+        background-image: url("assets/img/fbg.jpg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      .fran {
+        margin-top: 120px;
+        background-color: white;
+        border: 2px #ccc solid;
+        border-radius: 5px;
+        width: 500px;
+        height: 800px;
+        box-shadow: 2px 3px 10px rgb(184, 184, 184);
+        margin-bottom: 50px;
+      }
+
+      /* Sign Up */
+      #main-title {
+        /* border: 2px red solid; */
+        text-align: center;
+        font-size: 25px;
+        padding: 30px 30px 10px 30px;
+        font-weight: 700;
+        color: rgb(20, 20, 20);
+      }
+
+      /* It only takes a minute! */
+      #subtitle {
+        text-align: center;
+        font-size: 14px;
+        color: rgb(70, 70, 70);
+      }
+
+      form {
+        /* border: 2px red solid; */
+        padding: 20px 40px 20px 40px;
+      }
+
+      .placeholders {
+        /* border: 2px red solid; */
+        height: 85px;
+      }
+
+      .placeholders > label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+        /* border: 2px red solid; */
+      }
+
+      .placeholders input {
+        /* border: 2px red solid; */
+        width: 100%;
+        height: 35px;
+      }
+
+      input::placeholder {
+        font-family: "Montserrat";
+        /* border: 2px red solid; */
+      }
+
+      .terms-conditions {
+        /* border: 2px red solid; */
+      }
+
+      #terms-conditions {
+        display: inline;
+        font-size: 13px;
+        color: black;
+        /* border: 2px red solid; */
+      }
+
+      #a-submit {
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding: 10px 30px 10px 30px;
+        font-family: "Montserrat", "sans-serif";
+        border: 2px solid #eb2f06;
+        background-color: white;
+        border-radius: 3px;
+        cursor: pointer;
+        width: 110px;
+        font-size: 14px;
+        color: #eb2f06;
+        font-weight: 700;
+        -webkit-transition: all 0.43s ease;
+      }
+
+      #a-submit:hover {
+        border: 1px solid #eb2f06;
+        background-color: #eb2f06;
+        color: white;
+        width: 50%;
+         box-shadow: 2px 3px 10px #eb2f06;
+      }
+
+      #a-submit:active {
+        width: 40%;
+       box-shadow: 2px 3px 10px #eb2f06;
+      }
+    </style>
   </head>
-  <body>
-    <!--START SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="#">
-      <i class="fa fa-angle-up"></i>
-    </a>
-    <!-- END SCROLL TOP BUTTON -->
 
+  <body style="overflow-x: hidden;">
     <!-- Start header section -->
     <header id="mu-header">
       <nav class="navbar navbar-default mu-main-navbar" role="navigation">
@@ -68,10 +172,10 @@
             <!-- LOGO -->
 
             <!--  Text based logo  -->
-            <a class="navbar-brand" href="index.php">TheAppetiteMomos</a>
+            <a class="navbar-brand" href="index.html">TheAppetiteMomos</a>            >
 
             <!--  Image based logo  -->
-            <!-- <a class="navbar-brand" href="index.php"><img src="assets/img/logo.png" alt="Logo img"></a>  -->
+            <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a>  -->
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
@@ -89,52 +193,45 @@
       </nav>
     </header>
     <!-- End header section -->
-    <section id="store">
-      <div class="outer-div">
-        <div class="inner-div">
-          
-          <h2>Thane</h2><br>
-          <p class="para">
-            Opp ICICI Bank,<br />
-            Dada Patil Wadi, Naupada, <br />
-            Thane West, Thane,<br />
-            Maharashtra 400602.
-          </p>
-          <br />
-          
-          <h2>Airoli</h2>
-          <br />
-          <p class="para">
-            Shop No A 4, Plot No. C5, <br />
-            New Jivan CHS, Sector 3, <br />
-            Navi Mumbai, Airoli,<br />
-            Navi Mumbai - 400708
-          </p>
-          <br />
-
-          <h2>Kanjurmarg</h2>
-          <br />
-          <p class="para">
-            Police Station Rd, <br />
-            Laxmi Udyog Nagar, Kanjurmarg West, <br />
-            Kanjurmarg East, Mumbai, <br />
-            Maharashtra 400078.
-          </p>
-          <h2>Thane</h2>
-          <h4>(*Only For Delivery*)</h4>
-          <p class="para">
-            Kabra Galaxy building, Canopus , <br />
-            Shop - 21, <br />
-            Hiranandani Estate, Thane West.
-          </p>
-          <br />
-
+    <div class="container fran">
+      <h1 id="main-title">Please Fill This</h1>
+      <p id="subtitle">It only takes a minute!</p>
+      <form action="user_process.php" method="post">
+        <div id="first-name" class="placeholders">
+          <label id="Name" for="text" class="">Name</label>
+          <input required id="" type="text" name="Name" placeholder="Enter your name..."/>
         </div>
-      </div>
-    </section>
-    <!-- Start Footer -->
-   <div class="content">
-</div>
+
+        <div id="email" class="placeholders">
+          <label id="Email" for="text" class="">Email</label>
+          <input required id="" type="email" name="Email" placeholder="Enter your email..."/>
+        </div>
+
+        <div id="cont" class="placeholders">
+          <label id="Contact" for="text" class="">Contact</label>
+          <input required id="" type="text" name="Contact" maxlength="12" placeholder="Enter your Contact..."/>
+        </div>
+
+        <div id="area" class="placeholders">
+          <label id="Area" for="text" class="">Area</label>
+          <input required id="" type="text" name="Area" placeholder="Enter your Area..."/>
+        </div>
+
+        <div id="city" class="placeholders">
+          <label id="City" for="text" class="">City</label>
+          <input required id="" type="text" name="City" placeholder="Enter your City..."/>
+        </div>
+
+        <div id="State" class="placeholders">
+          <label id="State" for="text" class="">State</label>
+          <input required id="" type="text" name="State" placeholder="Enter your State..."/>
+        </div>
+        <br />
+
+        <button onclick="Submit" name="Submit" id="a-submit" href="#">Submit</button>
+      </form>
+    </div>
+    <!-- footer -->
     <footer id="myFooter">
         <div class="container">
             <div class="row">
@@ -179,9 +276,7 @@
             <p>© 2019 Appetite Momos Thane Mumbai </p>
         </div>
     </footer>
-
-    <!-- End Footer -->
-    <!-- jQuery library -->
+      <!-- jQuery library -->
   <script src="assets/js/jquery.min.js"></script> 
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
@@ -197,12 +292,11 @@
   <!-- Date Picker -->
   <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script> 
   <!-- Ajax contact form  -->
-  <script type="text/javascript" src="assets/js/app.js"></script>
+  <script type="text/javascript" src="assets/js/franchise.js"></script>
  
   <!-- Custom js -->
   <script src="assets/js/custom.js"></script> 
      <!-- script -->
     <script src="jquery-3.3.1.min.js"></script>
-    
   </body>
 </html>

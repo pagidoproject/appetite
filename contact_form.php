@@ -10,5 +10,5 @@
                       $query=mysqli_query($db_connect,"INSERT INTO cform (Name,Email,Contact,Subject,Message) VALUES ('$Name','$Email','$Contact','$Subject','$Message')") or die(mysqli_error($db_connect));
                     
                    mysqli_close($db_connect);
-                   header("location:index.php?");
+                   header("location:index.php");
                   ?>

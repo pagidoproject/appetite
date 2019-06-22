@@ -14,5 +14,5 @@ $City = $_REQUEST['City'];
 $query = mysqli_query($db_connect,"INSERT INTO fform (Name,Area,Email,Contact,State,City) VALUES ('$Name','$Area','$Email','$Contact','$State','$City')") or die(mysqli_error($db_connect));
 
 mysqli_close($db_connect);
-header("location:franchise.html");
+header("location:franchise.php");
 ?>
